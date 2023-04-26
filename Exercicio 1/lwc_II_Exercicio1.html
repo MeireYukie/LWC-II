@@ -1,0 +1,21 @@
+<template> 
+    <lightning-card> 
+        <h1 class="slds-text-heading_large"> 
+            CADASTRO 
+        </h1>
+        <template for:each={cliente} for:item="cli"> 
+            <h1 key={cli.id}>Lead: {cli.primeironome} {cli.sobrenome} </h1> 
+            <p key={cli.id}>Idade: {cli.idade} </p> 
+            <p key={cli.id}>Email: {cli.email} </p> 
+            <p key={cli.id}>Classificação: {cli.classificacao} </p> 
+            <p key={cli.id}>Empresa: {cli.empresa} </p> 
+            <p key={cli.id}>Receita anual: {cli.receitaanual} </p>
+        </template> 
+    </lightning-card> 
+</template>
+
+
+	
+			
+
+ 
