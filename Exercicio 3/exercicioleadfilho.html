@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+
+        <template for:each={lead} for:item="l">
+            <c-exercicioleadfilho key={l.ide} ide={l.ide} firstname={l.firstname} lastname={l.lastname} company={l.company} rating={l.rating} status={l.status}></c-exercicioleadfilho>
+        </template>
+       
+    </lightning-card>
+</template>
+
